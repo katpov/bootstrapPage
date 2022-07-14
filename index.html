@@ -1,12 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ukr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap4</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="button navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top-menu"
+                    aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="image/logo-kherson.png" alt="logo-kherson" style="width: 50px; height: auto;">
+                </a>
+                <div class="collapse navbar-collapse menu justify-content-end" id="top-menu">
+                    <a class="nav-link" href="#Kherson">Херсон</a>
+                    <a class="nav-link" href="#Skadovsk">Скадовськ</a>
+                    <a class="nav-link" href="#Island">о. Джарилгач</a>
+                    <a class="nav-link" href="#Lazurne">Лазурне</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container heading">
+            <h1>Рідна Херсонщина</h1>
+        </div>
+    </header>
+    <section>
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="image/skad1.jpg" class="d-block w-100" alt="Skadovsk">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Скадовськ</h5>
+                        <p>Маленьке місто на березі Чорного моря.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/dja1.jpg" class="d-block w-100" alt="Island">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Острів Джарилгач</h5>
+                        <p>Найбільший острів України та Чорного моря.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/kherson1.jpg" class="d-block w-100" alt="Kherson">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Херсон</h5>
+                        <p>Місто на півдні України, адміністративний центр Херсонської області.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="about d-flex flex-sm-column">
+        <div>
+            <img src="image/skad2.jpeg" alt="Skadovsk" align="left" class="me-5">
+            <h3><span class="badge bg-warning" id="Skadovsk">Cкадовськ</span></h3>
+            <p>Скадовськ - надзвичайне місто. Клімат тут завжди теплий, повітря свіже, овочі та фрукти найсмачніші. Це
+                один з кращих дитячих лікувальних центрів в Україні. Особливість міста як дитячого санаторію полягає у
+                тому, що тут і повітря, і вода насичені корисними мікроелементами, в тому числі сполуками йоду. Усі ці
+                корисні фактори допомагають позитивно впливати на дитячий організм.</p>
+            <p>Скадовськ – молоде місто, яке було
+                засноване у 1894. До цього тут розташовувалося татарське рибальське селище Алі-Агок, що в перекладі
+                означає «тиха пристань». Місто ідеально підходить для дітей та людей похилого віку. Залив невеликий і
+                влітку температура води тут досягає + 28°С.</p>
+            <p>Це місто мого дитинства, та ранніх рокв моєї доньки. Життя в
+                Скадовську для моєї дитини було найщасливішим в її житті. Прогулянки на свіжому повітрі, купання в морі
+                все літо, що може бути прекраснішим.</p>
+        </div>
+    </section>
+    <section class="about d-flex flex-sm-column">
+        <div>
+            <img src="image/dja2.jpg" alt="Island" align="right" class="ms-5">
+            <h3><span class="badge bg-warning" id="Island">Острів Джарилгач</span></h3>
+            <p> Джарилгач – це найбільший і практично безлюдний острів не тільки в Україні, але і у всій Центральній
+                Європі. Розташований він поблизу Скадовська. Протяжність пляжів становить близько 42 км. З берега можна
+                побачити, як в морі граються дельфіни. Тут живуть такі дикі тварини: олені, лані, свинки, муфлони.</p>
+            <p>На острові є можливість купатися в блакитних водах відкритого Чорного моря, де чудова глибина для
+                дорослих, а можна обрати сторону Джарилгацького заливу. Там вода за день нагрівається подекуди до 30
+                градусів, тому що має невелику глибину. Коли в затоці штиль, вода мерехтить неймовірним сяйвом.</p>
+            <p>Поїздки на острів - це найулюбленіше заняття вихідного літнього дня. Ці дні просто незабутні. Я ніби
+                заново народжуюся там заново. Це місце моєї сили та натхнення.</p>
+        </div>
+    </section>
+    <section class="about d-flex flex-sm-column">
+        <div>
+            <img src="image/kherson2.jpg" alt="Kherson" align="left" class="me-5">
+            <h3><span class="badge bg-warning" id="Kherson">Херсон</span></h3>
+            <p>Херсон охоплює давня історія – від Елади і Скіфів до Великого переселення народів, від
+                південних рубежів Київської Русі до запеклого протистояння Оттоманської Порти з поступом Європейської
+                цивілізації.</p>
+            <p>Херсон має значний туристичний потенціал завдяки історичним, культурним об’єктам, багатим природним
+                ресурсам та зручному географічному розташуванню. Через Херсон проходять автомобільні дороги державного
+                значення, що утворюють Чорноморський та Євроазіатський транспортні коридори. Подорожуючі можуть легко
+                дістатися до курортних зон Чорного та Азовського морів.</p>
+            <p>Це місто де я народилася, місто моїх предків. Освіжаючі хвилі річки Дніпро, завжди свіжа риба та раки.
+                Для кожного мешканця Скадовську Херсон це наступне рідне місто. Якщо влітку всі ходять на море, то
+                взимку на вихідних частенько заїжджають в Херсон, розважаються в <abbr
+                    title="Торгово-розважальний центр">ТРЦ</abbr> "Фабрика", смакують їжу з
+                Макдональдз.</p>
+        </div>
+    </section>
+    <section class="about d-flex flex-sm-column">
+        <div>
+            <img src="image/lazurne.jpg" alt="Island" align="right" class="ms-5">
+            <h3><span class="badge bg-warning" id="Lazurne">Лазурне</span></h3>
+            <p> Це курортне селище знаходиться на узбережжі Чорного моря за 28 км від Скадовська і за 100 км від
+                Херсона. Тут розташовано близько 30 баз відпочинку та дитячих таборів, також можна зняти житло у
+                приватному секторі. Узбережжя пологе, пляжі піщані. Більшість пляжів обладнані тіньовими навісами,
+                парасольками й роздягальнями. У 20-ти хвилинах ходьби знаходиться острів Джарилгач. На захід від села
+                розташоване озеро Устричне.</p>
+            <p>В Лазурному попри досить велику кількість відпочиваючих у високий сезон, море дуже чисте, а пляжі
+                зачаровують найвибагливіших туристів. В Лазурному можна побачити дельфінів, якщо піти на берег о 6:00,
+                це неймовірне видовище варто пережити бодай раз у своєму житті.</p>
+            <p>Я також полюбляю відпочинок в Лазурному і влітку ми досить часто туди приїжджали. А як його можна не
+                любити? Проходожна вода Чорного моря, неймовірно пухкий пісок і довга пляжна смуга, на якій всім
+                вистачить місця. </p>
+        </div>
+    </section>
+    <section class="d-flex">
+        <div>
+            <h3 class="mt-5 text-center fw-bolder">Проте сьогодні моя Херсонщина окупована армією російської федерації
+            </h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                <div class="card text-center text-bg-danger mt-5 mb-5 ms-5 war">
+                    <img src="image/fabrika.jpg" class="card-img-top" alt="Photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Улюблене місце херсонців</h5>
+                        <p class="card-text">З ранку 1 березня російські війська почали штурм міста Херсон.
+                            Вдень, за
+                            даними
+                            влади Херсонщини, почалися обстріли жилих будинків.</p>
+                        <a href="https://vgoru.org/post/trc-fabrika-pislya-obstrilu-foto" class="btn btn-dark">Перейти
+                            до
+                            новини</a>
+                    </div>
+                </div>
+                <div class="card text-center text-bg-danger mt-5 ms-5 mb-5 war">
+                    <img src="image/skadovsk-port.webp" class="card-img-top" alt="Photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Центральний пляж</h5>
+                        <p class="card-text">В окупованому Скадовську пролунали вибухи в порту, де базувалися
+                            російські
+                            "Іскандери".</p>
+                        <a href="https://war.obozrevatel.com/ukr/v-okupovanomu-skadovsku-prolunali-vibuhi-v-portu-de-bazuvalisya-rosijski-iskanderi-foto-ta-video.htm"
+                            class="btn btn-dark">Перейти до новини</a>
+                    </div>
+                </div>
+                <div class="card text-center text-bg-danger mt-5 ms-5 mb-5 war">
+                    <img src="image/skad3.jpg" class="card-img-top" alt="Photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Житловий будинок</h5>
+                        <p class="card-text">У тимчасово окупованому Скадовську пролунали вибухи, одна людина
+                            загинула,
+                            є
+                            поранені.</p>
+                        <a href="https://espreso.tv/u-timchasovo-okupovanomu-skadovsku-prolunali-vibukhi-odna-lyudina-zaginula-e-poraneni"
+                            class="btn btn-dark">Перейти до новини</a>
+                    </div>
+                </div>
+                <div class="card text-center text-bg-danger mt-5 ms-5 mb-5 war">
+                    <img src="image/kherson3.jpg" class="card-img-top" alt="Photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Збір урожаю</h5>
+                        <p class="card-text">138 день війни: хроніка подій в Херсонській області.</p>
+                        <a href="https://suspilne.media/259132-138-den-vijni-hronika-podij-v-hersonskij-oblasti/"
+                            class="btn btn-dark">Перейти до новини</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="believe">
+        <div class="container">
+            <h3 class="text-center text-bg-danger mb-5 mt-5">Російська федерація намагаться вкрасти мій дім. Через них
+                мої
+                рідні знаходяться в небезпеці кожного дня, а я
+                навіть не маю змоги зателефонувати їм та спитати як справи.</h3>
+            <div>
+                <img src="image/prapor.jpg" alt="Prapor" align="left" class="me-5 mb-5">
+                <h3><span class="badge bg-warning" id="Skadovsk">Ми всі чекаємо перемоги</span></h3>
+                <p>Херсонщина - це України. І ми всі українці несамовито чекаємо на нашу перемогу у цій боротьбі добра
+                    зі
+                    злом, розуму із тупістю, незалежності із рабством, майбутнього з минулим. </p>
+                <p>Кожен робить все, що від нього залежить. Але безмежна шана та подяка усім воїнам, які боронили і
+                    боронять
+                    країну на передовій.</p>
+                <p>Віримо та чекаємо на перемогу!</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="accordion accordion-flush bg-warning mb-5" id="accordion1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Допомогти армії
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordion1">
+                        <div class="accordion-body">
+                            <strong>Благодійний фонд Сергія Притули</strong> UA Перекази по Україні. БО Благодійний фонд
+                            Сергія Притули. ЄДРПОУ 43720363. Призначення платежу «Благодійна допомога». Гривня 47 305299
+                            00000 26005026707459. UA47 305299 00000 26005026707459
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container d-flex justify-content-center align-items-center footerMy">
+            <button type="button" class="btn btn-warning rounded-circle me-3">C</button>
+            <span class="fs-5">Всім дякую за увагу!</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

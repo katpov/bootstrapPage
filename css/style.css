@@ -1,0 +1,74 @@
+header {
+    height: 300px;
+    background-image: url(../image/flagU.jpg);
+    background-size: cover;
+}
+
+nav {
+    height: 94px;
+    padding: 50px 50px;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 30px;
+}
+
+.heading h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    padding: 50px 50px;
+
+}
+
+.about img {
+    height: 500px;
+    width: auto;
+}
+
+.about p {
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: orange;
+    margin-top: 30px;
+}
+
+.war {
+    width: 18rem;
+}
+
+.war img {
+    height: 150px;
+    width: auto;
+}
+
+.believe img {
+    height: 300px;
+    width: auto;
+}
+
+footer {
+    background-color: rgb(3, 100, 245);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerMy {
+    height: 100px;
+}
